@@ -1,7 +1,7 @@
 public class Motor {
 
-    double cilindraje=0;
-    String combustible="";
+    private double cilindraje=0;
+    private String combustible="";
 
     public double caballosFuerza(){
         double cf=0;
@@ -11,5 +11,21 @@ public class Motor {
             cf=5.2;
         }
         return cf;
+    }
+
+    public double getCilindraje() {
+        return cilindraje;
+    }
+
+    public void setCilindraje(double cilindraje) {
+        this.cilindraje = cilindraje;
+    }
+
+    public String getCombustible() {
+        return combustible;
+    }
+
+    public void setCombustible(String combustible) {
+        this.combustible = combustible;
     }
 }

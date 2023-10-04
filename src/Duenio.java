@@ -1,9 +1,9 @@
 public class Duenio {
-    String nombre;
-    String cedula;
-    int edad;
+    private String nombre;
+    private String cedula;
+    private int edad;
 
-    char genero;
+    private char genero;
 
     public String esMayorEdad(){
         String my="";
@@ -15,5 +15,37 @@ public class Duenio {
             System.out.println(my);
         }
         return my;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getCedula() {
+        return cedula;
+    }
+
+    public void setCedula(String cedula) {
+        this.cedula = cedula;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public char getGenero() {
+        return genero;
+    }
+
+    public void setGenero(char genero) {
+        this.genero = genero;
     }
 }
