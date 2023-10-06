@@ -7,6 +7,24 @@ public class Auto {
     private Motor motor;
     private Duenio duenio;
 
+    public Auto(){
+
+    }
+
+    public Auto(int numeroRuedas, String color, int puertas){
+        this.numeroRuedas=numeroRuedas;
+        this.color=color;
+        this.puertas=puertas;
+    }
+
+    public Auto(int numeroRuedas, String color, int puertas, Motor motor, Duenio duenio) {
+        this.numeroRuedas = numeroRuedas;
+        this.color = color;
+        this.puertas = puertas;
+        this.motor = motor;
+        this.duenio = duenio;
+    }
+
     public int getPuertas() {
         return puertas;
     }
@@ -49,5 +67,9 @@ public class Auto {
 
     public void imprimirColorPuertas(){
         System.out.println("El color del vehículo es: "+color+" y el numero de puertas es: "+puertas);
+    }
+
+    public void imprimirColorPuertas(int numAuto){
+        System.out.println("El color del vehículo "+numAuto+"es: "+color+" y el numero de puertas es: "+puertas);
     }
 }
